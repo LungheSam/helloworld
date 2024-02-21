@@ -2,6 +2,7 @@
 
 src/passwords.txt
 notToBeTracked.txt
+gitClones/
 #Ignore Executable
 *.exe
 *.o
