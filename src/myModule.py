@@ -9,5 +9,8 @@ class myModule:
     def describe(self):
         print("Name:"+self.name+"\nDate of Creation:"+self.date_creation)
         print("Creator:"+self._creator)
+    def funFact(self):
+        print("====I was born in 2024===")
+    
 m=myModule()
 m.describe()
