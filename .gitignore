@@ -1,7 +1,6 @@
 #Ignore sensitive information
 
 src/passwords.txt
-src/myModule.py
 notToBeTracked.txt
 #Ignore Executable
 *.exe
