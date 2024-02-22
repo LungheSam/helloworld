@@ -1,27 +1,9 @@
-# print("Time Remaining...")
+
 import time
 import pyttsx3
 import math
 from math import pi
 
-# def text_to_speech(text):
-#     # Initialize the text-to-speech engine
-#     engine = pyttsx3.init()
-
-#     # Set properties (optional)
-#     # engine.setProperty('rate', 150)  # Speed of speech
-#     # engine.setProperty('volume', 0.9)  # Volume level (0.0 to 1.0)
-
-#     voices = engine.getProperty('voices')
-#     # print(voices)
-#     engine.setProperty('voice', voices[0].id)
-
-#     # Convert text to speech
-#     engine.say(text)
-
-#     # Wait for the speech to finish
-#     engine.runAndWait()
-# # text_to_speech("Hello, How are you doing today?")
 class Point:
     def __init__(self,x,y,z=0):
         self.x=x
@@ -31,6 +13,12 @@ class Point:
         return f"x:{self.x}\ny:{self.y}\nz:{self.z}"
     def describe(self):
         print(f"Point ({self.x},{self.y},{self.z})\nx:{self.x}\ny:{self.y}\nz:{self.z}")
+    def getX(self):
+        return self.x
+    def getY(self):
+        return self.y
+    def getZ(self):
+        return self.z
     def say_coordinates(self):
         engine=pyttsx3.init()
         voices = engine.getProperty('voices')
